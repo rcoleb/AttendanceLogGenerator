@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="mainContainer"
+          xmlns="http://javafx.com/javafx/8.0.171"
+          xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.fhs.Controller"
+          hgap="10"
+          vgap="10"
+          maxWidth="Infinity">
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" />
+    </columnConstraints>
+
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+
+    <children>
+        <Label text="Select Month" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.hgrow="ALWAYS" GridPane.fillWidth="true"/>
+        <ComboBox fx:id="monthComboBox" promptText="Select Month" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.hgrow="ALWAYS" GridPane.fillWidth="true" prefWidth="200"/>
+        <Label text="Select Year" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.hgrow="ALWAYS" GridPane.fillWidth="true"/>
+        <Spinner fx:id="yearSpinner" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.hgrow="ALWAYS" GridPane.fillWidth="true" prefWidth="200"/>
+        <Button text="Select Input File" fx:id="selectFileButton" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.hgrow="ALWAYS" GridPane.fillWidth="true" prefWidth="200"/>
+        <Button text="Select Output File" fx:id="saveFileButton" GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.hgrow="ALWAYS" GridPane.fillWidth="true" prefWidth="200"/>
+        <Label fx:id="outputLabel" GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.hgrow="ALWAYS" GridPane.fillWidth="true" prefWidth="200"/>
+    </children>
+</GridPane>

@@ -1,0 +1,23 @@
+/* Basic styling for the JavaFX elements */
+.root {
+    -fx-font-family: 'Arial';
+    -fx-base: #dddddd;
+}
+
+.button {
+    -fx-background-color: linear-gradient(#f2f2f2, #d6d6d6);
+    -fx-border-color: #ccc;
+    -fx-border-width: 1;
+}
+
+.date-picker {
+    -fx-border-color: #c6c6c6;
+}
+
+.text-area {
+    -fx-control-inner-background: #ffffff;
+    -fx-font-family: Consolas;
+    -fx-highlight-fill: #9ab0ab;
+    -fx-highlight-text-fill: #ffffff;
+    -fx-text-fill: #2b2b2b;
+}
